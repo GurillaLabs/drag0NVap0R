@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cell_image" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/widget_common_banner_classic_image_h" android:scaleType="centerCrop" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/cell_duration_bottom" android:background="@drawable/cell_additional_info_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_alignRight="@id/cell_image" android:layout_alignBottom="@id/cell_image" />
+    <TextView android:textSize="8.0sp" android:textColor="@android:color/white" android:id="@id/cell_duration_no_thumb" android:background="@drawable/cell_additional_info_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/widget_common_padding" android:layout_above="@id/cell_subtitle" />
+    <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cell_image">
+        <com.goodbarber.v2.core.common.views.GBTextView android:ellipsize="end" android:gravity="left" android:id="@id/cell_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <com.goodbarber.v2.core.common.views.GBTextView android:ellipsize="end" android:id="@id/cell_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="3" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/form_field_top_placeholder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_padding" />
+    <EditText android:id="@id/form_field_singleline_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/form_field_top_placeholder" />
+    <TextView android:id="@id/form_field_instructions" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_padding" android:layout_below="@id/form_field_singleline_edittext" />
+</merge>
